@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <!-- API for font -->
+    <link href='https://fonts.googleapis.com' rel='stylesheet'>
+</head>
+<body>
+
+<!-- Container to center contents -->
+<div class="center">
+
+    <!-- Page heading -->
+    <div class="rectangle-page-title">
+        <h1>Calendar</h1>
+    </div>
+    
+    <!-- Month container -->
+    <div class="rectangle-month">
+        Februrary 2026
+    </div>
+
+    <!-- Initialize template -->
+    <!-- If books list is not empty, show info -->
+    {% if books %}
+        <!-- Loop through each book -->
+        {% for i in books %}
+            <!-- Display each book title and how many days it took user to read book -->
+            <div class="rectangle-book-data">
+                {{i.title}} : {{i.duration}} days
+            </div>
+            
+            <!-- Display each book start date and finish date -->
+            <div class="book-dates">
+                {{i.start_date}} &#8611; {{i.end_date}}
+            </div>
+            <!-- Stop loop -->
+            {% endfor %}
+        <!-- Stop checking book list -->
+        {% endif %}
+</div>
+
+<!-- Nav to Add Book page -->
+<div class = "rectangle-add-book">
+        <a href="/add/book">Add Book</a>
+</div>
+
+<!-- Nav to home dashboard -->
+<div class = "home-icon">
+        <a href="/">&#8962;</a>
+</div>
+        
+</body>
+</html>

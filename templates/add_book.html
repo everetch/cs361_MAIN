@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Add Book</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <!-- API for font -->
+    <link href='https://fonts.googleapis.com' rel='stylesheet'>
+</head>
+<body>
+
+<!-- Container to center contents -->
+<div class="center">
+
+    <!-- Page heading -->
+    <div class="rectangle-page-title">
+        <h1>Add Book</h1>
+    </div>
+
+    <!-- Staging for app to accept user input & save data -->
+    <form action="/add/book" method="POST" class="center">
+
+        <!-- Ask user for book info -->
+        <div class="rectangle-book-info">
+            <p>Title</p>
+        </div>
+        <!-- Create textbox with message to get title -->
+        <div class="rectangle-user-input">
+            <input type="text" id="bookTitle" name="title" placeholder="Enter title here" required>
+        </div>
+
+        <div class="rectangle-book-info">
+            <p>Author</p>
+        </div>
+        <!-- Create textbox with message to get author -->
+        <div class="rectangle-user-input">
+            <input type="text" id="bookAuthor" name="author" placeholder="Enter author here" required>
+        </div>
+
+        <!-- Create date picker with message to get start date -->
+        <div class="rectangle-book-info">
+            <p>Start Date</p>
+        </div>
+        <div class="rectangle-user-input">
+        <input type="date" id="startDate" name="start_date" required>
+        </div>
+
+        <!-- Create date picker with message to get end date -->
+        <div class="rectangle-book-info">
+            <p>End Date</p>
+        </div>
+        <div class="rectangle-user-input">
+        <input type="date" id="endDate" name="end_date" required>
+        </div>
+
+        <!-- Nav on page back -->
+        <button type="button" onclick="confirmBack()" class="back-button">&#10550;</button>
+        <!-- Save button, send to /add/book -->
+        <button type="submit" class="save-button">&#10515;</button>
+        <!-- Help button/icon -->
+        <button type="button" onclick="showHelp()" class="help-icon">&#63;</button>
+    </form>
+</div>
+
+<!-- JS functions -->
+<script>
+
+    // Shows pop up confirmation message confirming user wants to nav back
+    function confirmBack() {
+        var result = confirm("Are you sure? Any unsaved info will be lost.")
+        if (result == true) {
+            history.back();
+        }
+    }
+
+    // Shows pop up alert message letting user know what to do
+    function showHelp() {
+        alert("Once a user enters the book info and dates & then clicks the save icon, the book will is automatically added to the user's calendar.");
+    }
+</script>
+
+</body>
+</html>

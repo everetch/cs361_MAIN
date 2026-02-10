@@ -1,0 +1,249 @@
+/* Background for app */
+body {
+    background-image: url("/static/images/677.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: 'Indie Flowers', cursive;
+    margin: 40px;
+}
+
+/* Center contents */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+ADD BOOK, CALENDAR, HELP
+Container for page header
+*/
+.rectangle-page-title {
+    width: 600px;
+    height: 100px;
+    background-color:#CA9985;
+    padding: 20px;
+    margin: 50px;
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+ADD BOOK, HELP
+Container for back button
+*/
+.back-button {
+    background: none;
+    border: none;
+    color: #AFF4C6;
+    padding: 10px;
+    font-size: 150px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+/*
+HOME DASHBOARD
+Container for h1
+*/
+.oval {
+    width: 600px;
+    height: 240px;
+    background-color:#D6C4B8;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*
+HOME DASHBOARD
+Container for nav pages
+*/
+.rectangle-home {
+    width: 500px;
+    height: 40px;
+    background-color: #F2B5A7;
+    padding: 5px;
+    margin: 30px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+HOME DASHBOARD
+Container for tip message
+*/
+.rectangle-footer {
+    width: 1000px;
+    height: 40px;
+    background-color: #B9A7A1;
+    padding: 5px;
+    margin: 150px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+ADD BOOK
+Container for book info
+*/
+.rectangle-book-info {
+    width: 200px;
+    height: 20px;
+    background-color:#D9D9D9;
+    padding: 5px;
+    margin: 10px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+ADD BOOK
+Container for user input
+*/
+.rectangle-user-input {
+    width: 300px;
+    height: 40px;
+    background-color:#F8D398;
+    padding: 20px;
+    margin: 20px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+ADD BOOK
+Container for save button
+*/
+.save-button {
+    background: none;
+    border: none;
+    color: #AFF4C6;
+    padding: 10px;
+    font-size: 150px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/*
+ADD BOOK
+Container for help icon
+*/
+.help-icon {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    font-size: 80px;
+    color: #AFF4C6;
+    background: none;
+    border: none;
+    padding: 10;
+    cursor: pointer;
+}
+
+/*
+CALENDAR
+Container for month & year
+*/
+.rectangle-month {
+    width: 500px;
+    height: 40px;
+    background-color: #F8D398;
+    padding: 5px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+CALENDAR
+Container for book title & author
+*/
+.rectangle-book-data {
+    width: 500px;
+    background-color: #7AA375;
+    margin: 10px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+CALENDAR
+Container for start & end dates
+*/
+.book-dates {
+    width: 350px;
+    background-color: #CA9985;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+CALENDAR
+Container for add book
+*/
+.rectangle-add-book a {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    font-size: 40px;
+    padding: 5px;
+    color: #000000;
+    background: #AFF4C6;
+    border: none;
+    cursor: pointer;
+}
+
+/*
+CALENDAR
+Container for home icon
+*/
+.home-icon a {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    font-size: 100px;
+    color: #AFF4C6;
+    border: none;
+    cursor: pointer;
+}
+
+/*
+HELP
+Container for steps
+*/
+.rectangle-help-steps {
+    width: 1000px;
+    height: 380px;
+    background-color: #F2B5A7;
+    margin: 30px;
+    font-size: 36px;
+}
